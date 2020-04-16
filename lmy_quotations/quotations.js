@@ -15,6 +15,11 @@ function NewText() {
 	document.getElementById("textfield").value = myArrays[num];
 }
 
+function Init() {
+	var num = new Date().getMilliseconds();
+	document.getElementById("textfield").value = myArrays[num % myArrays.length];
+}
+
 var myArrays = new Array("赖小七一定会保持善良，保持努力，勇往直前，向阳而生！",
 	"我是一个很没有安全感的人，我希望我的粉丝照顾好身体，再去为小偶像花钱，我一直没给到他们一些承诺，我很怕我自己说了做不到…",
 	"我的生活里除了工作就是你们了",
